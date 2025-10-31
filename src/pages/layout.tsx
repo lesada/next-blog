@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 
 type LayoutProps = {
@@ -9,6 +10,7 @@ function Layout({ children }: LayoutProps) {
 		<div className="relative flex flex-col min-h-screen dark">
 			<Header />
 			<main className="flex flex-col flex-1 mb-12">{children}</main>
+			<Footer />
 		</div>
 	);
 }
