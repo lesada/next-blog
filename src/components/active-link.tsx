@@ -16,8 +16,8 @@ function ActiveLink({ children, ...rest }: ActiveLinkProps) {
 		<Link
 			{...rest}
 			className={cn(
-				"font-medium hover:text-blue-500 text-sm transition-colors",
-				isActive ? "text-blue-500" : "text-muted-foreground",
+				"text-action-sm hover:text-blue-200 transition-colors",
+				isActive ? "text-blue-200" : "text-gray-100",
 			)}
 		>
 			{children}
